@@ -49,10 +49,10 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
       const updatedContacts = await removeContact(id);
 
       if (updatedContacts.length === contactsList.length) {
-        console.log(chalk.red(`Contact with id ${id} not found`));
+        console.log(chalk.red.bold(`Contact with id "${id}" not found`));
         return;
       }
-      console.log(chalk.green(`Contact with id ${id} removed`));
+      console.log(chalk.green.bold(`Contact with id "${id}" removed`));
       console.table(updatedContacts);
 
       break;

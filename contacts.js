@@ -24,6 +24,10 @@ const getContactById = async (contactId) => {
 const removeContact = async (contactId) => {
   const contacts = await readContent();
   const result = contacts.filter((contact) => contact.id !== contactId);
+  await fs.writeFile(
+    path.join(__dirname, "db", "contacts.json"),
+    JSON.stringify(result, null, 2)
+  );
   return result;
 };
 
