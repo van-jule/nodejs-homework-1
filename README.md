@@ -1,9 +1,11 @@
 # nodejs-homework-1
 
-list https://monosnap.com/file/AAu4XN2xocFaUe7pdpFFSTyeSP9o55
+list https://monosnap.com/file/JNJC4NaO9KPAk9343OEfKvVSVKnreN
 
-add https://monosnap.com/file/XbSarSAs6rGRdDTTJez3JBi7LK1JTl
+add ok https://monosnap.com/file/4y89ZlFZkGpSqYXRYf7kHj4z7S18x8
 
-get https://monosnap.com/file/JMMNv1tQ9MBogf0wiMX9JLfHW3Ww3A
+add error https://monosnap.com/file/csp3JlxeR1a4ZzMCjPfXbTPPf4yIc4
 
-remove https://monosnap.com/file/df2jEJQ0DhnjgCg9hndEplts5I6H8G
+getByID https://monosnap.com/file/sfoCD2SURPc3eB1BAGZodL4Y03VEcN
+
+remove https://monosnap.com/file/BEGGwE4QxU3XRdnpBp5fs3CmfdC0iF
