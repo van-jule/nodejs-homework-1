@@ -21,10 +21,11 @@ program.parse(process.argv);
 const argv = program.opts();
 
 const invokeAction = async ({ action, id, name, email, phone }) => {
+  const contactsList = await listContacts();
+
   switch (action) {
     case "list":
-      const contacts = await listContacts();
-      console.table(contacts);
+      console.table(contactsList);
       break;
 
     case "get":
@@ -39,13 +40,10 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
       break;
 
     case "add":
-      const contact = await addContact(name, email, phone);
-      console.log(chalk.blue("Add new contact"));
-      console.log(contact);
+      await addContact(name, email, phone);
       break;
 
     case "remove":
-      const contactsList = await listContacts();
       const updatedContacts = await removeContact(id);
 
       if (updatedContacts.length === contactsList.length) {
